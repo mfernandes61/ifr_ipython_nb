@@ -6,8 +6,8 @@ MAINTAINER mark.fernandes@ifr.ac.uk
 
 # Make sure apt is up to date
 # RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
-RUN apt-get -qq update && apt-get -qq upgrade && build-essential make gcc zlib1g-dev git python python-dev python-pip \
-  libzmq3-dev sqlite3 libsqlite3-dev pandoc libcurl4-openssl-dev nodejs python-scipy python-matplotlib python-opencv 
+RUN apt-get -qq update && apt-get -qq upgrade && apt-get install build-essential make gcc zlib1g-dev git python python-dev 
+  python-pip libzmq3-dev sqlite3 libsqlite3-dev pandoc libcurl4-openssl-dev nodejs python-scipy python-matplotlib python-opencv 
 
 # Not essential, but wise to set the lang
 # RUN apt-get -qq install language-pack-en
