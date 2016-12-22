@@ -14,4 +14,4 @@ IFS=$'\n\t'
 #unset PASSWORD
 
 # ipython notebook --matplotlib=inline --no-browser --port=8888 --ip=* --certfile=$PEM_FILE --NotebookApp.password="$HASH"
-ipython notebook --matplotlib=inline --no-browser --port=8888 --ip=* 
+ipython notebook  --no-browser --port=8888 --ip=* 
