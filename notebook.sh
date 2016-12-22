@@ -11,7 +11,7 @@ IFS=$'\n\t'
 # fi
 
 #HASH=$(python -c "from IPython.lib import passwd; print(passwd('${PASSWORD}'))")
-unset PASSWORD
+#unset PASSWORD
 
 # ipython notebook --matplotlib=inline --no-browser --port=8888 --ip=* --certfile=$PEM_FILE --NotebookApp.password="$HASH"
 ipython notebook --matplotlib=inline --no-browser --port=8888 --ip=* 
